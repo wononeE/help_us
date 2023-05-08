@@ -1,0 +1,384 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+/* 웹폰트 링크연결 */
+*{margin: 0; padding: 0;}
+ul,ol{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    min-width: 1400px;
+    padding-top: 100px;
+}
+
+/*header*/
+#fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(90, 90, 90, 0.1);
+}
+
+.link_wrap{
+    position: relative;
+    height: 30px;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#link{
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+#link li{
+    float: left;
+}
+
+#link li a{
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    font-size: 14px;
+}
+
+#link li::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background-color: #999;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+#link li:nth-child(1)::before{
+    display: none;
+}
+
+header{
+    margin: 0 auto;
+    width: 1320px;
+    height: 70px;
+    position: relative;
+    text-align: center;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sponsor_btn{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    width: 125px;
+    height: 45px;
+    background-color: #1F1FB3;
+    border-radius: 23px;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 0;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor_btn a{
+    color: #fff;
+}
+
+.glasses_blue{
+    position: absolute;
+    top: 25px;
+    right: 140px;
+}
+
+#gnb{
+    display: inline-block;
+    margin-top: 30px;    
+}
+
+#gnb li{
+    float: left;
+}
+
+#gnb li a{
+    display: block;
+    color: #1F1FB3;
+    font-weight: bold;
+    padding: 0 15px 13px;
+    margin: 0 20px;
+}
+
+#gnb li:hover a{
+    border-bottom: 3px solid #1F1FB3;
+}
+
+/*modal_popup*/
+.modal{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.popup{
+    width: 650px;
+    margin: 0 auto;
+    height: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255);
+    padding: 35px 5px;
+    margin-top: 200px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.glasses_white{
+    position: absolute;
+    top: 38px;
+    right: 10px;
+}
+
+.popup input{
+    border: none;
+    outline: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 25px;
+}
+
+.close_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+/*container*/
+#container{
+    width: 1320px;
+    margin: 120px auto;
+    height: 1220px;
+}
+
+#container h1{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.news_wrap{
+    height: 950px;
+    margin: 95px 0;
+}
+
+.news_wrap li{
+    float: left;
+    width: 315px;
+    height: 450px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    margin: 0 20px 50px 0;
+    background-color: #fff;
+}
+
+.news_wrap li:nth-child(4){
+    margin-right: 0;
+}
+
+.news_wrap li:nth-child(8){
+    margin-right: 0;
+}
+
+.news_wrap img{
+    transform: scale(1);
+    transition: transform 1s;
+    display: block;
+}
+
+.news_wrap li:hover img{
+    transform: scale(1.1);
+}
+
+.img_box{
+    overflow: hidden;
+}
+
+.news_wrap li:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.news_wrap li:hover .text_box{
+    text-decoration: underline;
+}
+
+.more_btn{
+    text-align: center;
+}
+
+.more_btn a{
+    background-color: #333;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 50px 17px;
+}
+
+.more_btn a:hover{
+    background-color: #fff;
+    color: #333;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text_box{
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.date{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.text{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*footer*/
+#footer_wrap{
+    background-color: #333;
+    height: 300px;
+}
+
+.footer1_wrap{
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+}
+
+.footer_link{
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 10px;
+}
+
+.footer_link li{
+    float: left;
+}
+
+.footer_link li::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    vertical-align: middle;
+}
+
+.footer_link li a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 15px;
+} 
+
+.footer_link li a:hover{
+    color: rgba(255, 255, 255);
+}
+
+.footer_link li:nth-child(1)::before{
+    display: none;
+}
+
+.footer2{
+    height: 250px;
+    width: 1320px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.footer_text{
+    float: left;
+    width: 990px;
+    padding-left: 150px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: url(../images/common/footer_logo.png) no-repeat left top 40px;
+}
+
+.footer_icon{
+    float: right;
+    width: 330px;
+}
+
+.footer_text ul{
+    overflow: hidden;
+    margin: 7px 0;
+}
+
+.footer_text h1{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.footer_text ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+.footer_icon{
+    float: right;
+}
+
+.sns_icon li{
+    float: left;
+}
+
+.sns_icon li a{
+    display: block;
+    opacity: 0.5;
+    margin-left: 5px;
+}
+
+.sns_icon li a:hover{
+    opacity: 1;
+}
