@@ -358,6 +358,7 @@ header{
     position: relative;
     margin-top: 80px;
     color: #fff;
+    overflow: hidden;
 }
 
 .contents3_left{
